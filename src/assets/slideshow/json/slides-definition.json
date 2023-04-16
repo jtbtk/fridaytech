@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1,
+    "module": "tailwindcss",
+    "slides": [
+      {
+        "id": 1,
+        "title": "Cover",
+        "position": "cover:parent",
+        "include": false,
+        "path": "/tailwindcss"
+      },
+      {
+        "id": 2,
+        "title": "Introduction",
+        "position": "introduction:parent",
+        "include": false,
+        "path": "/tailwindcss/introduction"
+      },
+      {
+        "id": 3,
+        "title": "Sommaire",
+        "position": "toc:parent",
+        "include": false,
+        "path": "/tailwindcss/toc"
+      },
+      {
+        "id": 4,
+        "title": "Qu'est-ce que la conception réactive ?",
+        "position": "responsive-design:parent",
+        "include": true,
+        "path": "/tailwindcss/responsive-design/introduction"
+      },
+      {
+        "id": 5,
+        "title": "Media Queries",
+        "position": "responsive-design:child",
+        "include": false,
+        "path": "/tailwindcss/responsive-design/media-queries"
+      },
+      {
+        "id": 6,
+        "title": "Flebox",
+        "position": "responsive-design:child",
+        "include": false,
+        "path": "/tailwindcss/responsive-design/flexbox"
+      },
+      {
+        "id": 7,
+        "title": "Frameworks CSS et classes utilitaires",
+        "position": "framework:parent",
+        "include": true,
+        "path": "/tailwindcss/framework-css"
+      },
+      {
+        "id": 8,
+        "title": "Qu'est-ce que Tailwind CSS ?",
+        "position": "tailwind:parent",
+        "include": true,
+        "path": "/tailwindcss/tailwind/introduction"
+      },
+      {
+        "id": 9,
+        "title": "Utilisation de Tailwind CSS",
+        "position": "tailwind:child",
+        "include": true,
+        "path": "/tailwindcss/tailwind/utilisation"
+      },
+      {
+        "id": 10,
+        "title": "Comment installer Tailwind CSS ?",
+        "position": "tailwind:child",
+        "include": true,
+        "path": "/tailwindcss/tailwind/installation"
+      },
+      {
+        "id": 11,
+        "title": "Compilation à la volée : JIT",
+        "position": "tailwind:subchild",
+        "include": true,
+        "path": "/tailwindcss/tailwind/jit"
+      },
+      {
+        "id": 12,
+        "title": "Comment installer Tailwind CSS ? (2/2)",
+        "position": "tailwind:child",
+        "include": false,
+        "path": "/tailwindcss/tailwind/installation-end"
+      },
+      {
+        "id": 13,
+        "title": "Personnalisation et configuration de Tailwind CSS",
+        "position": "tailwind:child",
+        "include": true,
+        "path": "/tailwindcss/tailwind/customization"
+      },
+      {
+        "id": 14,
+        "title": "Intégration avec Angular Material",
+        "position": "tailwind:child",
+        "include": true,
+        "path": "/tailwindcss/tailwind/integration-material"
+      },
+      {
+        "id": 15,
+        "title": "Conclusion",
+        "position": "conclusion:parent",
+        "include": true,
+        "path": "/tailwindcss/conclusion"
+      },
+      {
+        "id": 16,
+        "title": "Ressources supplémentaires",
+        "position": "resources:parent",
+        "include": true,
+        "path": "/tailwindcss/resources"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "module": "cypress",
+    "slides": [
+      {
+        "id": 1,
+        "title": "Cover",
+        "position": "cover:parent",
+        "include": false,
+        "path": "/cypress"
+      },
+      {
+        "id": 2,
+        "title": "Introduction",
+        "position": "introduction:parent",
+        "include": false,
+        "path": "/cypress/introduction"
+      },
+      {
+        "id": 3,
+        "title": "Sommaire",
+        "position": "toc:parent",
+        "include": false,
+        "path": "/cypress/toc"
+      },
+      {
+        "id": 4,
+        "title": "Conclusion",
+        "position": "conclusion:parent",
+        "include": true,
+        "path": "/cypress/conclusion"
+      },
+      {
+        "id": 5,
+        "title": "Ressources supplémentaires",
+        "position": "resources:parent",
+        "include": true,
+        "path": "/cypress/resources"
+      }
+    ]
+  }
+]

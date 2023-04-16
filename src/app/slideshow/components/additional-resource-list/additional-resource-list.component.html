@@ -1,0 +1,8 @@
+<app-slideshow-title></app-slideshow-title>
+<mat-list>
+  <app-additional-resource-item
+    *ngFor="let additionalResource of additionalResources"
+    [additionalResource]="additionalResource"
+    class="prose-2xl"
+  />
+</mat-list>

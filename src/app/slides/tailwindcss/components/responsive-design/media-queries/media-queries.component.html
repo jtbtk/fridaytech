@@ -1,0 +1,35 @@
+<app-slideshow-title></app-slideshow-title>
+
+<p>
+  Les media queries permettent de personnaliser le style des éléments HTML en fonction des caractéristiques de
+  l'appareil utilisé, comme la taille de l'écran, l'orientation de l'écran et le type de média.
+</p>
+<app-prism [code]="syntax" language="css"></app-prism>
+<p>
+  Les opérateurs logiques <code>or</code>, <code>and</code> et <code>not</code> peuvent être utilisés pour combiner des
+  conditions dans les règles <code>@media</code>.
+</p>
+<p>
+  L'opérateur logique <code>only</code> peut être utilisé pour spécifier que la règle ne s'applique que si toutes les
+  conditions spécifiées sont remplies et que le périphérique de sortie correspond à la liste de médias spécifiée.
+</p>
+<h2>Media queries en pratique</h2>
+<h3>Cibler les appareils en fonction de la taille de leur écran</h3>
+<p>
+  Utilisation de <code>width</code>, <code>min-width</code>, <code>max-width</code> pour définir des styles pour
+  différents points de rupture.
+</p>
+<p>Point de rupture : seuil de déclenchement.</p>
+<app-prism [code]="screen_width" language="css"></app-prism>
+<h3>Cibler les appareils en fonction de l'orientation de leur écran</h3>
+<p>
+  Utilisation de <code>portrait</code> ou <code>landscape</code> pour définir des styles pour une orientation d'écran.
+</p>
+<app-prism [code]="screen_orientation" language="css"></app-prism>
+<h3>Cibler les appareils en fonction de leur type de média</h3>
+<p>
+  Utilisation pour définir des styles pour certains types de média tels que
+  <code>all</code> pour tous les types d'appareils, <code>print</code> pour les imprimantes, <code>screen</code> pour
+  les appareils avec un écran, <code>speech</code> pour les lecteurs d'écran, ...
+</p>
+<app-prism [code]="device_type" language="css"></app-prism>

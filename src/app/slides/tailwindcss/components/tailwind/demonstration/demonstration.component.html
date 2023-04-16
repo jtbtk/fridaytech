@@ -1,0 +1,116 @@
+<app-slideshow-title></app-slideshow-title>
+
+<div class="grid grids-cols-1 lg:grid-cols-2 lg:gap-4 lg:divider-x-4">
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Définir la largeur et la hauteur d'un élément avec <code>w-</code> et
+      <code>h-</code>
+    </h3>
+  </div>
+  <div class="col-span-1">
+    <div class="w-56 h-56 bg-gray-200">
+      <div class="w-1/2 bg-blue-200 h-1/2">&nbsp;</div>
+    </div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_1" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Ajouter du padding et de la marge à un élément avec <code>p-</code> et
+      <code>m-</code>
+    </h3>
+  </div>
+  <div class="col-span-1">
+    <div class="flex bg-gray-100">
+      <div class="w-56 p-4 bg-blue-500">Padding</div>
+      <div class="w-56 m-4 bg-red-500">Margin</div>
+    </div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_2" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Contrôler l'affichage d'un élément avec des classes comme
+      <code>hidden</code>, <code>block</code>, <code>inline</code>, <code>inline-block</code> ou <code>flex</code>, ...
+    </h3>
+  </div>
+  <div class="col-span-1 space-y-4">
+    <div class="block bg-gray-200">&nbsp;</div>
+    Ceci est
+    <div class="inline-block bg-gray-200">un</div>
+    exemple.
+    <div class="flex flex-col lg:flex-row">
+      <div class="p-2 bg-red-500 w-100 lg:hidden lg:w-1/3">1</div>
+      <div class="invisible p-2 bg-blue-500 w-100 lg:visible lg:w-1/3">2</div>
+      <div class="p-2 bg-green-500 w-100 lg:w-1/3">3</div>
+    </div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_3" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Ajouter une bordure à un élément avec <code>border</code>,
+      <code>border-</code>
+    </h3>
+  </div>
+  <div class="col-span-1">
+    <div class="border border-b-4 border-orange-400 border-solid rounded-md rounded-b-xl border-b-slate-600">
+      &nbsp;
+    </div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_4" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>Définir la couleur de fond d'un élément avec <code>bg-</code></h3>
+  </div>
+  <div class="col-span-1 space-y-4">
+    <div class="text-white bg-red-500">&nbsp;</div>
+    <div class="text-white bg-gradient-to-r from-red-500 to-yellow-500">&nbsp;</div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_5" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Définir la taille de la police, la couleur, l'alignement avec des classes commençant par <code>text-</code>,
+      <code>font-</code>, ...
+    </h3>
+  </div>
+  <div class="col-span-1 space-y-4">
+    <div class="p-4 text-xl font-bold text-left">Ceci</div>
+    <div class="p-4 text-lg text-center">est un</div>
+    <div class="p-4 text-right underline uppercase">exemple.</div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_6" language="markup"></app-prism>
+  </div>
+  <div class="col-span-1 lg:col-span-2">
+    <h3>
+      Ajouter des transitions, des transformations, des animations, ... avec des classes comme <code>transition</code>,
+      <code>animate-</code>, ...
+    </h3>
+  </div>
+  <div class="col-span-1 space-y-4">
+    <div
+      class="flex items-center justify-center w-32 transition duration-300 delay-150 border-b-8 border-orange-500 rounded-full h-28 animate-spin bg-cyan-900 hover:scale-110 hover:bg-cyan-500"
+    >
+      <div class="w-32 h-2 transform rotate-45 bg-yellow-500 rounded-full hover:bg-red-500 animate-ping"></div>
+      <div class="w-32 h-2 transform -rotate-45 bg-yellow-500 rounded-full hover:bg-red-500 animate-ping"></div>
+    </div>
+  </div>
+  <div class="col-span-1">
+    <app-prism [code]="code_7" language="markup"></app-prism>
+  </div>
+</div>
+<div class="py-12">
+  <p>
+    Des sites comme
+    <a href="https://flowbite.com/docs/components/card/" target="_blank">Flowbite</a>
+    et <a href="https://daisyui.com/" target="_blank">daisyUI</a> proposent des bibliothèques de composants UI
+    construits avec Tailwind CSS.
+  </p>
+</div>

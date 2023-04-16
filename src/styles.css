@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide {
+  @apply p-12 bg-gray-50 border-gray-300 shadow-lg flex flex-col min-h-[95vh] rounded-3xl 
+    prose prose-lg xl:prose-xl max-w-none prose-pre:bg-[#2d2d2d] prose-pre:text-[#ccc] prose-pre:text-[20px];
+}
+
+@import '~prismjs/themes/prism-tomorrow.css';
