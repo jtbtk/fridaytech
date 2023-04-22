@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "module": "tailwindcss",
+    "resources": [
+      {
+        "id": 1,
+        "url": "https://tailwindcss.com/docs",
+        "name": "Documentation de Tailwind CSS"
+      },
+      {
+        "id": 2,
+        "url": "https://tailwindcss.com/docs/guides/angular",
+        "name": "Guide d'intégration de TailwindCSS avec Angular"
+      },
+      {
+        "id": 3,
+        "url": "https://tailwindcomponents.com/cheatsheet/",
+        "name": "Tailwind CSS Cheat Sheet"
+      },
+      {
+        "id": 4,
+        "url": "https://github.com/aniftyco/awesome-tailwindcss",
+        "name": "Awesome Tailwind CSS",
+        "description": "Liste de ressources pour Tailwind CSS"
+      },
+      {
+        "id": 5,
+        "url": "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/",
+        "name": "Interactive guide to flexbox"
+      },
+      {
+        "id": 6,
+        "url": "https://flexboxfroggy.com/",
+        "name": "Flexbox froggy",
+        "description": "Jeu interactif pour apprendre Flexbox"
+      },
+      {
+        "id": 7,
+        "url": "https://heroicons.com/",
+        "name": "heroicons",
+        "description": "Collection d'icônes SVG gratuites pour les interfaces utilisateur"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "module": "cypress",
+    "resources": [
+      {
+        "id": 1,
+        "url": "https://www.cypress.io/",
+        "name": "Cypress",
+        "description": "Site officiel de Cypress"
+      },
+      {
+        "id": 2,
+        "url": "https://learn.cypress.io/",
+        "name": "Cypress",
+        "description": "Site officiel de Cypress - Learn"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+<mat-list-item lines="{{ additionalResource.description ? '3' : '2' }}">
+  <mat-icon matListItemIcon>link</mat-icon>
+  <span matListItemTitle>{{ additionalResource.name }}</span>
+  <span>{{ additionalResource.description }}</span>
+  <span matListItemLine>
+    <a href="{{ additionalResource.url }}" target="_blank">{{ additionalResource.url }}</a>
+  </span>
+</mat-list-item>

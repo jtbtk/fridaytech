@@ -1,0 +1,11 @@
+<app-slideshow-title></app-slideshow-title>
+
+<ol class="pt-0 pl-0 list-disc list-inside">
+  <ng-container *ngFor="let slide of slides; index as i">
+    <ng-container *ngIf="slide.include">
+      <li [ngClass]="getPadding(i)">
+        {{ slide.title }}
+      </li>
+    </ng-container>
+  </ng-container>
+</ol>
