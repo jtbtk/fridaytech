@@ -1,0 +1,19 @@
+<app-slideshow-title></app-slideshow-title>
+
+<ul class="pl-0 list-disc list-inside">
+  Le fichier de configuration peut être utilisé pour :
+  <li>
+    étendre des sections du fichier de configuration par défaut avec
+    <code>extend</code>
+  </li>
+  <li>remplacer des sections du fichier de configuration par défaut</li>
+  <li>ajouter des plugins à la section <code>plugins</code> pour étendre les fonctionnalités de Tailwind CSS</li>
+  <li>
+    personnaliser certaines autres options de Tailwind CSS :
+    <code>!important</code>, un préfixe aux classes générées, ...
+  </li>
+</ul>
+<h2>Fichier de configuration personnalisé</h2>
+<app-prism [code]="config_personalized" language="js"></app-prism>
+<h2>Fichier de configuration par défaut (npx tailwindcss init --full)</h2>
+<app-prism [code]="config_standard_full" language="js"></app-prism>

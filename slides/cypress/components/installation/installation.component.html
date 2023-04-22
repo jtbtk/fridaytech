@@ -1,0 +1,47 @@
+<app-slideshow-title></app-slideshow-title>
+
+<h2>Installation via npm</h2>
+<app-prism [code]="install_command" language="batch"></app-prism>
+
+<h2>Exécution via npx : cypress open | run</h2>
+<h3>cypress open</h3>
+<p>La commande permet d'ouvrir l'interface graphique de Cypress.</p>
+
+<h4>Configuration de l'environnement de test</h4>
+<pre>Racine du projet : cypress.config.ts</pre>
+<img alt="Configuration" src="assets/slides/cypress/images/config_1.png" />
+<img alt="Configuration" src="assets/slides/cypress/images/config_2.png" />
+
+<h4>Création de fichiers de test d'exemple et de base à partir de modèles fournis par Cypress</h4>
+<img alt="Cypress Logo" src="assets/slides/cypress/images/create_test_1.png" />
+
+<img alt="Cypress Logo" src="assets/slides/cypress/images/create_test_2.png" />
+
+<img alt="Cypress Logo" src="assets/slides/cypress/images/create_test_3.png" />
+
+<img alt="Cypress Logo" src="assets/slides/cypress/images/create_test_4.png" />
+
+<h4>Exécution de tests avec live reload</h4>
+<img alt="Cypress Logo" src="assets/slides/cypress/images/execute_test_1.png" />
+
+<h4>Débeugage de tests</h4>
+<p>
+  Examen des valeurs des variables, détection des erreurs, messages de log, inspection native du navigateur et time
+  travel.
+</p>
+<img alt="Cypress Logo" src="assets/slides/cypress/images/debug_test_1.png" />
+<img alt="Cypress Logo" src="assets/slides/cypress/images/debug_test_2.png" />
+
+<h3>cypress run</h3>
+<p>
+  La commande permet d'exécuter tous les tests de manière séquentielle en utilisant un navigateur headless (par défaut)
+  basé sur Chromium, qui simule un environnement de navigateur réel. Cette méthode garantit que les tests s'exécutent de
+  manière cohérente, fiable et plus rapide, quel que soit l'environnement de l'utilisateur final. Cette fonctionnalité
+  est utile pour exécuter des tests de manière automatisée dans un pipeline CI/CD.
+</p>
+
+<img alt="Cypress Logo" src="assets/slides/cypress/images/launch_run.png" />
+<p>Quelques options qui peuvent être ajoutées à la commande <code>npx cypress run</code>:</p>
+<p><code>npx cypress run --headed</code></p>
+<p><code>npx cypress run --browser chrome</code></p>
+<p><code>npx cypress run --spec cypress/integration/my_test.spec.ts</code></p>

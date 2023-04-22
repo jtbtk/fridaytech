@@ -1,0 +1,23 @@
+<app-slideshow-title></app-slideshow-title>
+
+<ul class="pl-0 list-decimal list-inside">
+  <li>
+    Créer un fichier CSS, par exemple <code>input.css</code>, et ajouter les directives Tailwind :
+    <app-prism [code]="step_3" language="css"></app-prism>
+  </li>
+  <li>
+    Ajouter les fichiers à compiler dans la section <code>content</code> dans le fichier de configuration, et si
+    nécessaire, des classes dans la section <code>safelist</code>.
+  </li>
+  <app-prism [code]="step_4" language="js"></app-prism>
+  <li>
+    Lancer le CLI pour générer un fichier CSS, par exemple
+    <code>output.css</code> :
+    <app-prism [code]="step_5" language="css"></app-prism>
+  </li>
+  <li>
+    Ajouter le chemin vers le fichier CSS généré dans la balise
+    <code>link</code> du code HTML :
+    <app-prism [code]="step_6" language="markup"></app-prism>
+  </li>
+</ul>

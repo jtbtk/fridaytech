@@ -1,0 +1,46 @@
+<app-slideshow-title></app-slideshow-title>
+
+<pre>
+  +-----------+      +-----------------+        +------------+
+  + <i>input.css</i> + ---- +   Tailwind CSS  + ------ + <i>output.css</i> +
+  +-----------+      +-----------------+        +------------+
+                              |
+                     +-----------------+        + -----------------------------------------------+
+                     + Compilateur JIT + ------ + Fichier de configuration : <i>tailwind.config.js</i>  +
+                     +-----------------+        +------------------------------------------------+
+                                                          |                      |
+                     +---------------------------------------------+      +---------------------------------------------+
+                     + Génération du fichier <i>output.css</i> à la volée |      + Ajout des classes CSS au fichier <i>output.css</i> +
+                     + à partir de la section <i>content</i>              |      + à partir de la section <i>safelist</i>             +
+                     + --------------------------------------------+      +---------------------------------------------+</pre
+>
+
+<p>
+  Le compilateur JIT (Just-In-Time) de Tailwind CSS permet d'améliorer les performances en réduisant la taille du
+  fichier CSS généré. Il accélère également le temps de chargement du site et facilite le développement en compilant
+  uniquement les classes utilisées dans le projet, ainsi que celles incluses dans la <code>safelist</code>.
+</p>
+<p>Le compilateur permet d'utiliser des valeurs arbitraires dans les noms des classes.</p>
+<div class="w-full bg-[#8e07e7] text-center text-3xl text-[#d9d1dd] lg:text-5xl">Exemple</div>
+
+<app-prism [code]="example_html" language="html"></app-prism>
+<app-prism [code]="example_css" language="css"></app-prism>
+
+<p>
+  <a href="https://play.tailwindcss.com/HBvFF7Ct2x" target="_blank">
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </a>
+</p>

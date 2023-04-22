@@ -1,0 +1,98 @@
+<app-slideshow-title></app-slideshow-title>
+
+<p>
+  Angular Material est une librairie de composants UI pour Angular qui suit les principes de Material Design de Google.
+</p>
+<h2>Pourquoi intégrer Tailwind CSS avec Angular Material ?</h2>
+<p>
+  Angular Material ne fournit pas de classes utilitaires comme le fait Tailwind CSS, ce qui peut entrainer le besoin de
+  devoir écrire ses propres classes pour personnaliser un projet. En intégrant Tailwind CSS dans un projet Angular
+  Material, il est possible de bénéficier de ses avantages.
+</p>
+
+<h2>Définition d'un composant sans classe personnalisée</h2>
+<div class="flex flex-row space-x-4">
+  <div class="w-1/2">
+    <mat-card>
+      <form>
+        <mat-form-field>
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."> </textarea>
+        </mat-form-field>
+      </form>
+      <button color="primary" mat-button mat-raised-button>Primary</button>
+    </mat-card>
+  </div>
+  <div class="w-1/2">
+    <app-prism [code]="codeWithoutCustomClasses" language="markup"></app-prism>
+  </div>
+</div>
+
+<style>
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-mat-card {
+    padding: 4px;
+  }
+</style>
+<h2>Définition d'un composant avec classes personnalisées</h2>
+<div class="flex flex-row space-x-4">
+  <div class="w-1/2">
+    <mat-card class="example-mat-card">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."> </textarea>
+        </mat-form-field>
+      </form>
+      <button color="primary" mat-button mat-raised-button>Primary</button>
+    </mat-card>
+  </div>
+  <div class="w-1/2">
+    <app-prism [code]="codeWithCustomClasses" language="markup"></app-prism>
+    <app-prism [code]="customClasses" language="css"></app-prism>
+  </div>
+</div>
+<h2>Définition d'un composant avec TailwindCSS</h2>
+<div class="flex flex-row space-x-4">
+  <div class="w-1/2">
+    <mat-card class="p-1">
+      <form class="min-w-[150px] max-w-[500px] w-full flex flex-col">
+        <mat-form-field class="w-full">
+          <mat-label>Favorite food</mat-label>
+          <input matInput placeholder="Ex. Pizza" value="Sushi" />
+        </mat-form-field>
+        <mat-form-field class="w-full">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."> </textarea>
+        </mat-form-field>
+      </form>
+      <button color="primary" mat-button mat-raised-button>Primary</button>
+    </mat-card>
+  </div>
+  <div class="w-1/2">
+    <app-prism [code]="codeWithTailwind" language="markup"></app-prism>
+  </div>
+</div>
+
+<h2>Comment intégrer Tailwind CSS avec Angular Material ?</h2>
+<p>
+  Pour ajouter TailwindCSS à un projet utilisant Angular Material, il faut d'abord installer Angular et Angular
+  Material. Ensuite, il est possible d'ajouter Tailwind CSS en utilisant la méthode précédemment décrite.
+</p>

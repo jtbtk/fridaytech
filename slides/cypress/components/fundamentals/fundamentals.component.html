@@ -1,0 +1,45 @@
+<app-slideshow-title></app-slideshow-title>
+
+<p>
+  Le client de Cypress s'exécute dans le navigateur, tandis que le serveur s'exécute sur la machine locale et
+  communiquent en temps réel pour fournir une expérience de test rapide et efficace.
+</p>
+
+<h2>Commandes</h2>
+
+<p>
+  Les commandes de Cypress permettent de simuler des interactions utilisateur telles que des clis de souris, des saisies
+  au clavier, ... pour tester le comportement de l'application web. Elles sont asynchrones, ce qui signifie qu'elles
+  sont ajoutées à une file d'attente pour être exécutées ultérieurement. Pour garantir que les commandes sont exécutées
+  dans l'ordre et que chaque commande se termine avant de passer à la suivante, il est possible d'utiliser des fonctions
+  de rappel, des promesses ou le chaînage de commandes.
+</p>
+
+<ul class="list-inside">
+  La chaîne de commande se termine :
+  <li>soit lorsque toutes les commandes ont été exécutées avec succès</li>
+  <li>soit qu'une erreur est survenue pendant l'exécution</li>
+  Si une erreur se produit à n'importe quel point de la chaîne, la chaîne entière est interrompue et les commandes
+  suivantes ne sont pas exécutées.
+</ul>
+
+<p>
+  Il est important de noter que chaque commande ne retourne pas de valeur, mais fournit un objet (appelé "subject") à la
+  commande suivante. Cet objet "subject" représente l'état de l'application ou de la page Web à un moment donné.
+  (cy.get() => "yield the subject")
+</p>
+
+<p>
+  ⚠️ pas continuer à chaîner des commandes après avoir agi sur le DOM pour éviter d'utiliser des sujets obsolètes. Il
+  est donc recommandé d'utiliser des fonctions de rappel ou des promesses pour s'assurer que chaque commande est
+  terminée avant de passer à la suivante.
+</p>
+
+<app-prism [code]="chaining_commands" language="js"></app-prism>
+<h2>Création de commandes personnalisées</h2>
+<app-prism [code]="example_commands_ts" language="js"></app-prism>
+
+<h2>Interception des requêtes HTTP</h2>
+<p>
+  <app-prism [code]="network_interception" language="js"></app-prism>
+</p>
